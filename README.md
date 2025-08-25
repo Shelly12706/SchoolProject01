@@ -3,6 +3,47 @@
 # 專案簡介
 此系統為魔法學院課程管理系統，採用 **Java Swing + MVC + SQL** 架構，支援學生選課、老師管理課程、成績登錄、報表統計等功能。  
 
+# 專案架構
+
+```text
+MagicAcademy/
+├─ src/main/java/
+│  ├─ model/
+│  │  ├─ Student.java
+│  │  ├─ Teacher.java
+│  │  ├─ Course.java
+│  │  └─ Enrollment.java
+│  ├─ dao/
+│  │  ├─ StudentDao.java
+│  │  ├─ TeacherDao.java
+│  │  ├─ CourseDao.java
+│  │  ├─ EnrollmentDao.java
+│  │  └─ impl/
+│  │     ├─ StudentDaoImpl.java
+│  │     ├─ TeacherDaoImpl.java
+│  │     ├─ CourseDaoImpl.java
+│  │     └─ EnrollmentDaoImpl.java
+│  ├─ service/
+│  │  ├─ StudentService.java
+│  │  ├─ TeacherService.java
+│  │  ├─ CourseService.java
+│  │  ├─ EnrollmentService.java
+│  │  └─ impl/
+│  │     ├─ StudentServiceImpl.java
+│  │     ├─ TeacherServiceImpl.java
+│  │     ├─ CourseServiceImpl.java
+│  │     └─ EnrollmentServiceImpl.java
+│  ├─ controller/
+│  │  ├─ LoginFrame.java
+│  │  ├─ MainMenuFrame.java
+│  │  ├─ CoursePanel.java
+│  │  ├─ TeacherPanel.java
+│  │  └─ ReportPanel.java
+│  └─ util/
+│     ├─ CodeGenerator.java
+│     ├─ PasswordUtil.java
+│     └─ DbConnection.java
+└─ pom.xml
 
 ---
 ![老師登入](pic/teacher_login.png)  
