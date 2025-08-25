@@ -49,14 +49,7 @@ TeacherPanel（老師端）
 | 編輯課程按鈕 ✏️   | 編輯課程資料        | 更新資料庫，刷新列表               |
 | 報表按鈕 📊     | 查看選課統計 & 成績統計 | 開啟 ReportPanel 顯示柱狀圖/圓餅圖 |
 
-ReportPanel 與 Service/DAO 關聯圖
-ReportPanel
-    |
-    +--> CourseService / EnrollmentService
-             |
-             +--> CourseDaoImpl / EnrollmentDaoImpl
-                     |
-                     +--> MySQL 資料庫
+
 ---
 ![老師登入](pic/teacher_login.png)  
 ![老師新增課程_衝堂](pic/teacher_add_course_conflict.png)  
