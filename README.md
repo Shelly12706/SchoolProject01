@@ -16,6 +16,7 @@ jhgjhgjgjhgjg<br>
 [yahoo](http://tw.yahoo.com)
 
 ![咖啡](pic/coffee.jpg)
+![註冊](pic/register.png)
 
 [練習](exam.txt)
 
