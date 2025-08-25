@@ -1,6 +1,6 @@
 
 
-![咖啡](pic/coffee.jpg)
+
 ![學生成績趨勢](pic/student_grade_trend.png)  
 ![學生登入](pic/student_login.png)  
 ![學生選修成績](pic/student_select_grade.png)  
