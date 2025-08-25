@@ -14,6 +14,48 @@ CoursePanel / TeacherPanel 小圖示互動表格
 | **Controller** | - Swing 畫面控制 <br> - `LoginFrame`, `CoursePanel`, `TeacherPanel`, `ReportPanel` <br> - 處理按鈕事件、流程導向、報表呼叫 |
 | **報表** | - `ReportPanel` 顯示課程學生數、通過率、平均分數、個人成績趨勢 <br> - 支援 Excel 匯出 |
 
+專案架構
+
+```text
+MagicAcademy/
+├─ src/main/java/
+│  ├─ model/
+│  │  ├─ Student.java
+│  │  ├─ Teacher.java
+│  │  ├─ Course.java
+│  │  └─ Enrollment.java
+│  ├─ dao/
+│  │  ├─ StudentDao.java
+│  │  ├─ TeacherDao.java
+│  │  ├─ CourseDao.java
+│  │  ├─ EnrollmentDao.java
+│  │  └─ impl/
+│  │     ├─ StudentDaoImpl.java
+│  │     ├─ TeacherDaoImpl.java
+│  │     ├─ CourseDaoImpl.java
+│  │     └─ EnrollmentDaoImpl.java
+│  ├─ service/
+│  │  ├─ StudentService.java
+│  │  ├─ TeacherService.java
+│  │  ├─ CourseService.java
+│  │  ├─ EnrollmentService.java
+│  │  └─ impl/
+│  │     ├─ StudentServiceImpl.java
+│  │     ├─ TeacherServiceImpl.java
+│  │     ├─ CourseServiceImpl.java
+│  │     └─ EnrollmentServiceImpl.java
+│  ├─ controller/
+│  │  ├─ LoginFrame.java
+│  │  ├─ MainMenuFrame.java
+│  │  ├─ CoursePanel.java
+│  │  ├─ TeacherPanel.java
+│  │  └─ ReportPanel.java
+│  └─ util/
+│     ├─ CodeGenerator.java
+│     ├─ PasswordUtil.java
+│     └─ DbConnection.java
+└─ pom.xml
+
 
 CoursePanel（學生端）
 | 欄位 / 按鈕     | 說明     | 互動效果                    |
