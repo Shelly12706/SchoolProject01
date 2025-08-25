@@ -16,7 +16,7 @@ CoursePanel / TeacherPanel 小圖示互動表格
 
 
 
-![專案架構](pic/專案架構.png) 
+![專案架構](pic/MVC架構.png) 
 
 flowchart TD
     A[學生登入] --> B[CoursePanel 顯示課程列表]
