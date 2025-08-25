@@ -14,7 +14,23 @@ CoursePanel / TeacherPanel 小圖示互動表格
 | **Controller** | - Swing 畫面控制 <br> - `LoginFrame`, `CoursePanel`, `TeacherPanel`, `ReportPanel` <br> - 處理按鈕事件、流程導向、報表呼叫 |
 | **報表** | - `ReportPanel` 顯示課程學生數、通過率、平均分數、個人成績趨勢 <br> - 支援 Excel 匯出 |
 
+flowchart TD
+    A[學生登入] --> B[CoursePanel 顯示課程列表]
+    B --> C{選擇課程?}
+    C -- 是 --> D[衝堂檢查]
+    D -- 通過 --> E[成功加入選課]
+    E --> F[報表更新] --> G[學生查看個人成績與報表]
 
+    H[老師登入] --> I[TeacherPanel 顯示課程管理]
+    I --> J{新增或編輯課程?}
+    J -- 是 --> K[課程資料儲存至資料庫]
+    K --> L[報表資料更新]
+
+    I --> M[老師輸入分數]
+    M --> N[成績寫入資料庫]
+    N --> L
+
+    L --> O[老師查看學生成績統計與選課統計]
 CoursePanel（學生端）
 | 欄位 / 按鈕     | 說明     | 互動效果                    |
 | ----------- | ------ | ----------------------- |
