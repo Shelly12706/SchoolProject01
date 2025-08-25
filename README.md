@@ -54,7 +54,7 @@ TeacherPanel（老師端）
 | 報表按鈕 📊     | 查看選課統計 & 成績統計 | 開啟 ReportPanel 顯示柱狀圖/圓餅圖 |
 
 
-
+本專案展示了教師端與學生端在課程管理、成績查詢與統計上的功能介面，以下是相關截圖：
 ---
 ![老師登入](pic/teacher_login.png)  
 ![老師新增課程_衝堂](pic/teacher_add_course_conflict.png)  
