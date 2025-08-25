@@ -14,3 +14,10 @@ jhgjhgjgjhgjg<br>
 [google](http://www.google.com)
 
 [yahoo](http://tw.yahoo.com)
+
+![咖啡](pic/coffee.jpg)
+
+[練習](exam.txt)
+
+[School](doc/index.html)
+
